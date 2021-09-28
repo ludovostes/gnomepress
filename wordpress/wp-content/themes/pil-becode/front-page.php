@@ -9,5 +9,6 @@
 ?>
 <?php if($punchLine):?>
     <h1 class = "topbanner-punchline"><?= $punchLine; ?></h1>
+    <?= $video ?>
 <?php endif; ?>
 <?php get_footer(); ?>
