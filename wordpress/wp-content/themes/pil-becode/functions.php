@@ -23,3 +23,10 @@ function entreprises_custom_post_type() {
 }
 
 add_action('init', 'entreprises_custom_post_type');
+
+//adding menu options 
+function register_pil_menu() {
+    register_nav_menu('additional-menu', __('Additional Menu'));
+}
+
+add_action('init', 'register_pil_menu');
