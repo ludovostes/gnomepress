@@ -1,4 +1,84 @@
 .menu-footer {
-    border-top: #4b4b4b 1px solid;
+    list-style: none;
+    border-top: $bordercolor 1px solid;
+    border-bottom: $bordercolor 1px solid;
+    padding: 0;
+    display: grid;
+}
+
+.menu-footer li{
+    padding: 0.5rem 0;
+}
+
+.menu-footer li:nth-child(even) {
+    grid-column: 2/3;
+    padding-left: 3rem;
+    border-left: $bordercolor 1px solid;;
+}
+
+.menu-footer a{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+footer {
+    border-top: $bordercolor 1px solid;
+    padding: 1rem;
+}
+
+footer a, p{
+    color: #fff;
+    text-decoration: none;
     font-family: 'II vorkurs';
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-topleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+}
+
+.footer-name {
+    font-size: 1.5rem;
+    width: 9rem;
+    font-weight: 500;
+}
+
+.footer-telephonediv {
+    border-radius: 5000px;
+    border: $bordercolor 1px solid;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-notediv, .menu-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-note, .footer-notegreylink {
+    color: $bordercolor;
+}
+
+.footer-notediv p, .footer-notediv a {
+    font-size: 0.9rem;
+}
+
+.footer-noteleft{
+    grid-column: 1/2;
+}
+
+.footer-noteright{
+    grid-column: 2/3;
 }
