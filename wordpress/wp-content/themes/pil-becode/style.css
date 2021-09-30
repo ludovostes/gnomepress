@@ -1,3 +1,38 @@
-body{
-    background-color: #17171717;
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursLight.woff2") format("woff2"), url("fonts/IIVorkursLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursMedium.woff2") format("woff2"), url("fonts/IIVorkursMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursBold.woff2") format("woff2"), url("fonts/IIVorkursBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+}
+
+.menu-footer {
+  border-top: #4b4b4b 1px solid;
+  font-family: "II vorkurs";
+}
+
+/*# sourceMappingURL=style.css.map */
