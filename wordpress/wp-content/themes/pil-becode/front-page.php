@@ -11,12 +11,16 @@
         'controls' => 0
     );
     $new_src = add_query_arg($params, $src);
-    echo $new_src;
     $video = str_replace($src, $new_src, $video);
 
     $image = get_field('image');
     $imageSrc = $image['sizes']['medium'];
     $titreVideo = get_field('titre');
+
+
+    $pilNom = get_field('nom', 'options');
+
+    
 ?>
 <?php if($punchLine):?>
     <h1 class = "topbanner-punchline"><?= $punchLine; ?></h1>
@@ -35,5 +39,6 @@
         <img src="<?= $imageSrc ?>">
     <?php endif; ?>
 <?php endif; ?>
+
 <script src="./js/playvideo.js"></script>
 <?php get_footer(); ?>
