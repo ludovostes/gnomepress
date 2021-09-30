@@ -30,3 +30,10 @@ function register_pil_menu() {
 }
 
 add_action('init', 'register_pil_menu');
+
+function get_setup() {
+    wp_enqueue_style('style', get_stylesheet_uri(),null,microtime(),'all');
+    wp_enqueue_script('main', get_theme_file_uri('./js/main.js'),null,microtime(),true);
+}
+
+add_action('wp_enqueue_scripts', 'get_setup');

@@ -23,7 +23,7 @@
 <?php endif; ?>
 
 <?php if($video): ?>
-    <div class="topbanner-videocontainer" style="position:relative;display:flex;justify-content:center;">
+    <div id="videocontainer" class="topbanner-videocontainer" style="position:relative;display:flex;justify-content:center;">
         <?= $video ?>
         <button id="playbutton" class="topbanner-videoplaybutton" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;width:100px;height:100px;border:none;background:#FFC33B;">Voir la vidéo</button>
     <?php if($titreVideo): ?>
