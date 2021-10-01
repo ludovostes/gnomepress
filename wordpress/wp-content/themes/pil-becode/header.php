@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<?php wp_header() ?>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,4 +15,3 @@
 </head>
 <body>
     
->>>>>>> f0b2c554fd367f2c71ca89f02be020ba5bad1351

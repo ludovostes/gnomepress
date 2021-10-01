@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<footer>
-
-
-<?php wp_footer() ?>
-
-</footer>
-=======
 <?php wp_footer(); 
 $adress1=get_field('adresse_1', 'options');
 $adress2=get_field('adresse_2', 'options');
@@ -45,4 +37,3 @@ $email=get_field('email', 'options');
 </footer>
 </body>
 </html>
->>>>>>> f0b2c554fd367f2c71ca89f02be020ba5bad1351
