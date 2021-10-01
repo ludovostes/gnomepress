@@ -28,6 +28,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #171717;
+  font-family: "II Vorkurs";
 }
 
 .menu-footer {
@@ -67,7 +68,6 @@ footer {
 footer a, p {
   color: #fff;
   text-decoration: none;
-  font-family: "II vorkurs";
   font-size: 1.3rem;
   font-weight: 300;
 }
