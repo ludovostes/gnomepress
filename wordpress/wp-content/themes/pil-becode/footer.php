@@ -25,10 +25,14 @@ $email=get_field('email', 'options');
     ));
     ?>
     <div class="footer-notediv">
-        <p class="footer-note footer-noteleft">Le Pôle Image © 2021</p>
-        <a class="footer-notegreylink footer-noteleft" href="#">Politique de confidentialité</a>
-        <p class="footer-note footer-noteright">Design by <a href="http://savoirfaire.digital/">savoir.faire</a></p>
-        <p class="footer-note footer-noteright">Coded by <a href="http://becode.org/">becode.org</a></p>
+        <div class="footer-noteleft">
+            <p class="footer-note">Le Pôle Image © 2021</p>
+            <a class="footer-notegreylink" href="#">Politique de confidentialité</a>
+        </div>
+        <div class="footer-noteright">
+            <p class="footer-note">Design by <a href="http://savoirfaire.digital/">savoir-faire.digital</a></p>
+            <p class="footer-note">Coded by <a href="http://becode.org/">becode.org</a></p>
+        </div>
     </div>
 </footer>
 </body>
