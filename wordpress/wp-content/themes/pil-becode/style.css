@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursLight.woff2") format("woff2"), url("fonts/IIVorkursLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursMedium.woff2") format("woff2"), url("fonts/IIVorkursMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("fonts/IIVorkursBold.woff2") format("woff2"), url("fonts/IIVorkursBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #171717;
+  font-family: "II Vorkurs";
+}
+
+.menu-footer {
+  list-style: none;
+  border-top: #4b4b4b 1px solid;
+  border-bottom: #4b4b4b 1px solid;
+  padding: 0;
+  display: grid;
+  height: 10rem;
+}
+
+.menu-footer li {
+  padding: 0.5rem 0;
+}
+
+.menu-footer li:nth-child(even) {
+  grid-column: 2/3;
+  padding-left: 3rem;
+  border-left: #4b4b4b 1px solid;
+}
+
+.menu-footer li:nth-child(1), .menu-footer li:nth-child(2) {
+  padding-top: 2rem;
+}
+
+.menu-footer a {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+footer {
+  border-top: #4b4b4b 1px solid;
+  padding: 1rem;
+  padding-top: 2rem;
+}
+
+footer a, p {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-topleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20rem;
+}
+
+.footer-name {
+  font-size: 1.5rem;
+  width: 9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer-telephonediv {
+  border-radius: 5000px;
+  border: #4b4b4b 1px solid;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-notediv, .menu-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-note, .footer-notegreylink {
+  color: #4b4b4b;
+}
+
+.footer-notediv p, .footer-notediv a {
+  font-size: 0.9rem;
+}
+
+.footer-noteleft {
+  grid-column: 1/2;
+}
+
+.footer-noteright {
+  margin-left: 3rem;
+  grid-column: 2/3;
+}
+
+/*# sourceMappingURL=style.css.map */
