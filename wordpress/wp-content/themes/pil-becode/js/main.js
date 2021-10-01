@@ -1,5 +1,5 @@
 video = document.getElementsByTagName("iframe")[0];
-videoDiv = document.getElementById("videocontainer");
+videoDiv = document.getElementById("mediacontainer");
 playButton = document.getElementById('playbutton');
 videoTitle = document.getElementById('titrevideo');
 

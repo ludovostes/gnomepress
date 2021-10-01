@@ -15,8 +15,7 @@
 
     $image = get_field('image');
     $imageSrc = $image['sizes']['medium'];
-    $titreVideo = get_field('titre');
-
+    $titreVideo = get_field('titre_video');
 
     $pilNom = get_field('nom', 'options');
 
@@ -25,20 +24,20 @@
 <?php if($punchLine):?>
     <h1 class = "topbanner-punchline"><?= $punchLine; ?></h1>
 <?php endif; ?>
-
+    <button class="topbanner-scrollbutton"></button>
+<div id="mediacontainer" class="topbanner-mediacontainer">
 <?php if($video): ?>
-    <div id="videocontainer" class="topbanner-videocontainer" style="position:relative;display:flex;justify-content:center;">
         <?= $video ?>
-        <button id="playbutton" class="topbanner-videoplaybutton" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;width:100px;height:100px;border:none;background:#FFC33B;">Voir la vidéo</button>
+        <button id="playbutton" class="topbanner-videoplaybutton">Voir la vidéo</button>
     <?php if($titreVideo): ?>
-        <p class ="topbanner-titrevideo" style="position:absolute;left:50%;top:50%;transform:translate(-50%,50px);color:white;"><?= $titreVideo ?></p>
-    </div>
+        <p class ="topbanner-titrevideo"><?= $titreVideo ?></p>
     <?php endif; ?>
 <?php else: ?>
     <?php if($image) : ?>
-        <img src="<?= $imageSrc ?>">
+        <img class="topbanner-image" src="<?= $imageSrc ?>">
     <?php endif; ?>
 <?php endif; ?>
+</div>
 
 <script src="./js/playvideo.js"></script>
 <?php get_footer(); ?>
