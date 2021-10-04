@@ -1,5 +1,6 @@
 <?php
 /* Template Name: Nos Entreprises */
+get_header();
 $posts = get_posts( array(
     'posts_per_page' => -1,
     'post_type' => 'entreprise'
@@ -13,24 +14,30 @@ if($posts) : ?>
     //print_r($categories);
     ?>
     <li>
-        <h2><?php the_title() ?></h2>
+        <div class="entreprises-catégories">
+        <h2 class="entreprises-nom"><?php the_title() ?></h2>
         <?php foreach($categories as $category): if($category->parent == 0):?>
-            <p><?php echo $category->name?></p>
+            <p class="entreprises-catégorie"><?php echo $category->name?></p>
             <?php endif;
             endforeach;
             ?>
-        <img src="<?php echo $image['sizes']['medium'] ?>">
-        <ul>
-            <li><a href="phoneto:<?php the_field('telephone')?>">+<?php the_field('telephone')?></a></li>
-            <li><a href="mailto:<?php the_field('email')?>"><?php the_field('email')?></a></li>
-            <li><a href="<?php the_field('website')?>" target="_blank"><?php the_field('website')?></a></li>
-        <?php foreach($categories as $category): if($category->parent != 0):?>
-            <p><?php echo $category->name ?></p>
+            <button class="entreprises-accordeonbutton"></button>
+        </div>
+        <div class="entreprises-info">
+        <img class="entreprises-image" src="<?php echo $image['sizes']['medium'] ?>">
+        <ul class="entreprises-contact">
+            <li><a class="entreprises-téléphone" href="phoneto:<?php the_field('telephone')?>">+<?php the_field('telephone')?></a></li>
+            <li><a class="entreprises-email" href="mailto:<?php the_field('email')?>"><?php the_field('email')?></a></li>
+            <li><a class="entreprises-website" href="<?php the_field('website')?>" target="_blank"><?php the_field('website')?></a></li>
+            <div class="entreprises-souscatégories">
+            <?php foreach($categories as $category): if($category->parent != 0):?>
+            <p class="entreprises-souscatégorie"><?php echo $category->name ?></p>
             <?php endif;
             endforeach;
             ?>
-
+            </div>
         </ul>
+        <div>
     </li>
 <?php endforeach;?>
     </ul>

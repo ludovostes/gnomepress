@@ -1,0 +1,61 @@
+.entreprises-nom {
+    align-self: center;
+    padding: 0;
+    font-weight: 300;
+}
+
+.entreprises-catégories {
+    display: flex;
+    gap: 2rem;
+}
+
+.entreprises-accordeonbutton {
+    background-image: url(http://localhost/wp-content/uploads/2021/10/arrow-down.svg);
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    justify-self: flex-end;
+}
+
+.entreprises-catégorie {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+    margin: 2rem 0rem;
+    border-radius: 5000px;
+    border: 1px solid $bordercolor;
+    font-size: 1.1rem;
+}
+
+.entreprises-contact {
+    padding: 0;
+}
+
+.entreprises-contact a {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.entreprises-website {
+    color: $yellow;
+}
+
+.entreprises-souscatégories {
+    display: flex;
+}
+
+.entreprises-souscatégorie {
+    color: $bordercolor;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    &:after {
+        margin: .5rem;
+        content: "-";
+    }
+}
+
+
+.entreprises-souscatégories p:nth-last-child(1)::after {
+    display: none;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "II Vorkurs";
   src: url("fonts/IIVorkursLight.woff2") format("woff2"), url("fonts/IIVorkursLight.woff") format("woff");
@@ -21,6 +22,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +31,20 @@ body {
   padding: 0;
   background-color: #171717;
   font-family: "II Vorkurs";
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .menu-footer {
@@ -121,6 +137,67 @@ footer a, p {
 .footer-noteright {
   margin-left: 3rem;
   grid-column: 2/3;
+}
+
+.entreprises-nom {
+  align-self: center;
+  padding: 0;
+  font-weight: 300;
+}
+
+.entreprises-catégories {
+  display: flex;
+  gap: 2rem;
+}
+
+.entreprises-accordeonbutton {
+  background-image: url(http://localhost/wp-content/uploads/2021/10/arrow-down.svg);
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  justify-self: flex-end;
+}
+
+.entreprises-catégorie {
+  padding: 0.25rem 1.5rem;
+  text-align: center;
+  margin: 2rem 0rem;
+  border-radius: 5000px;
+  border: 1px solid #4b4b4b;
+  font-size: 1.1rem;
+}
+
+.entreprises-contact {
+  padding: 0;
+}
+
+.entreprises-contact a {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.entreprises-website {
+  color: #FFC33B;
+}
+
+.entreprises-souscatégories {
+  display: flex;
+}
+
+.entreprises-souscatégorie {
+  color: #4b4b4b;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.entreprises-souscatégorie:after {
+  margin: 0.5rem;
+  content: "-";
+}
+
+.entreprises-souscatégories p:nth-last-child(1)::after {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
