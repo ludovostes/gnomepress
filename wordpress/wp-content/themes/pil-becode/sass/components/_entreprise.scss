@@ -1,3 +1,7 @@
+.displayNone {
+    display: none;
+}
+
 .entreprises-list {
     padding: 2rem;
 }
@@ -19,13 +23,20 @@
     align-items: center;
 }
 
+
 .entreprises-accordeonbutton {
     background-color: transparent;
     border: none;
     background-repeat: no-repeat;
     height: auto;
     margin-left: auto;
+    transform: rotate(180deg);
+    filter: none;
+}
+
+.entreprises-accordeonbuttonreset {
     filter: grayscale(1);
+    transform: rotate(0deg);
 }
 
 .entreprises-catégorie {

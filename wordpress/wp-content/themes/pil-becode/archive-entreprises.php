@@ -11,7 +11,6 @@ if($posts) : ?>
     setup_postdata($post); //ça permet d'utiliser the_title etc
     $image = get_field('image');
     $categories = get_field('categories');
-    //print_r($categories);
     ?>
     <li class="entreprises-listitem">
         <div class="entreprises-catégories">
@@ -21,9 +20,9 @@ if($posts) : ?>
             <?php endif;
             endforeach;
             ?>
-            <img id="accordeonButton" src="http://localhost/wp-content/uploads/2021/10/arrow-down.svg" class="entreprises-accordeonbutton">
+            <img id="accordeonButton" src="http://localhost/wp-content/uploads/2021/10/arrow-down.svg" class="entreprises-accordeonbuttonreset entreprises-accordeonbutton">
         </div>
-        <div class="entreprises-info">
+        <div class="entreprises-info displayNone" id="entreprisesInfo">
         <img class="entreprises-image" src="<?php echo $image['sizes']['medium'] ?>">
         <ul class="entreprises-contact">
             <li><a class="entreprises-téléphone" href="phoneto:<?php the_field('telephone')?>">+<?php the_field('telephone')?></a></li>
@@ -37,6 +36,7 @@ if($posts) : ?>
             ?>
             </div>
         </ul>
+        </div>
     </li>
 <?php endforeach;?>
     </ul>
