@@ -1,3 +1,18 @@
+.entreprises-topdiv {
+    display: flex;
+    justify-content: center;
+    border-radius: 5000px;
+    background-color: #212121;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+}
+
+.entreprises-searchbar, .entreprises-searchbutton {
+    border: none;
+    background-color: #212121;
+}
+
 .displayNone {
     display: none;
 }
@@ -7,22 +22,30 @@
 }
 
 .entreprises-nom {
+    margin: 0;
+    margin-right: 2rem;
     align-self: center;
     padding: 0;
     font-weight: 300;
     font-size: 2.4rem;
 }
 
-.entreprises-catégories {
+.entreprises-title {
     display: flex;
-    gap: 2rem;
     width: 100%;
     border-bottom: 1px solid $bordercolor;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
+.entreprises-catégories {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
 
 .entreprises-accordeonbutton {
     background-color: transparent;
@@ -32,16 +55,18 @@
     margin-left: auto;
     transform: rotate(180deg);
     filter: none;
+    transition: all 0.25s;
 }
 
 .entreprises-accordeonbuttonreset {
     filter: grayscale(1);
     transform: rotate(0deg);
+    transition: all 0.25s;
 }
 
 .entreprises-catégorie {
     padding: 0.8rem 2rem;
-    margin: 2rem 0rem;
+    align-self: center;
     border-radius: 5000px;
     border: 1px solid $bordercolor;
     font-size: 1.1rem;
@@ -55,9 +80,19 @@
     padding: 0;
 }
 
+.entreprises-info{
+    max-width: 300px;
+}
+
 .entreprises-info *{
     margin-bottom: 2rem;
     font-size: 1.5rem;
+}
+
+.entreprises-titleleft{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75%;
 }
 
 .entreprises-contact a {
