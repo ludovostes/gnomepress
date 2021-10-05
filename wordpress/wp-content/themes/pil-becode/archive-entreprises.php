@@ -6,14 +6,14 @@ $posts = get_posts( array(
     'post_type' => 'entreprise'
 ));
 if($posts) : ?>
-<ul>
+<ul class="entreprises-list">
     <?php foreach ($posts as $post) :
     setup_postdata($post); //ça permet d'utiliser the_title etc
     $image = get_field('image');
     $categories = get_field('categories');
     //print_r($categories);
     ?>
-    <li>
+    <li class="entreprises-listitem">
         <div class="entreprises-catégories">
         <h2 class="entreprises-nom"><?php the_title() ?></h2>
         <?php foreach($categories as $category): if($category->parent == 0):?>
@@ -21,7 +21,7 @@ if($posts) : ?>
             <?php endif;
             endforeach;
             ?>
-            <button class="entreprises-accordeonbutton"></button>
+            <img id="accordeonButton" src="http://localhost/wp-content/uploads/2021/10/arrow-down.svg" class="entreprises-accordeonbutton">
         </div>
         <div class="entreprises-info">
         <img class="entreprises-image" src="<?php echo $image['sizes']['medium'] ?>">
@@ -37,7 +37,6 @@ if($posts) : ?>
             ?>
             </div>
         </ul>
-        <div>
     </li>
 <?php endforeach;?>
     </ul>
