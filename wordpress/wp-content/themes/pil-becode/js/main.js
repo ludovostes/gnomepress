@@ -1,6 +1,10 @@
 video = document.getElementsByTagName("iframe")[0];
-videoDiv = document.getElementById("mediacontainer");
+//videoDiv = document.getElementById("mediacontainer");
+videoDiv = document.getElementsByTagName("html")[0];
 playButton = document.getElementById('playbutton');
+playButtonCoord = playButton.getBoundingClientRect();
+playButtonTop = playButtonCoord.top;
+playButtonLeft = playButtonCoord.left;
 videoTitle = document.getElementById('titrevideo');
 
 // playButton.addEventListener("click", ()=>{
@@ -17,11 +21,11 @@ playButton.addEventListener("click", ()=>{
 })
 
 videoDiv.addEventListener("mouseover", (e)=>{
-    playButton.style.left = e.pageX + 'px' 
-    playButton.style.top = e.pageY-150 + 'px'
+    playButton.style.left = e.pageX-playButtonTop + 'px' 
+    playButton.style.top = e.pageY-playButtonLeft + 'px'
 })
 
-videoDiv.addEventListener("mouseout", ()=>{
-    playButton.style.left = 50 + "%"
-    playButton.style.top = 50 + "%"
-})
+// videoDiv.addEventListener("mouseout", ()=>{
+//     playButton.style.left = 50 + "%"
+//     playButton.style.top = 50 + "%"
+// })

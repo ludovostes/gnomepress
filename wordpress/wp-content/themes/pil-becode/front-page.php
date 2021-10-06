@@ -24,7 +24,7 @@
 <?php if($punchLine):?>
     <h1 class = "topbanner-punchline"><?= $punchLine; ?></h1>
 <?php endif; ?>
-    <button class="topbanner-scrollbutton"></button>
+    <button class="topbanner-scrollbutton" onclick="document.getElementById('target').scrollIntoView()"></button>
 <div id="mediacontainer" class="topbanner-mediacontainer">
 <?php if($video): ?>
         <?= $video ?>
@@ -34,10 +34,10 @@
     <?php endif; ?>
 <?php else: ?>
     <?php if($image) : ?>
-        <img class="topbanner-image" src="<?= $imageSrc ?>">
+        <imgclass="topbanner-image" src="<?= $imageSrc ?>">
     <?php endif; ?>
 <?php endif; ?>
 </div>
-
+<div class="test"></div>
 <script src="./js/playvideo.js"></script>
 <?php get_footer(); ?>

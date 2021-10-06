@@ -18,6 +18,13 @@
     background-position: center;
     z-index: 10;
     margin-left: 50%;
+    transition: background-position-y 0.25s;
+    cursor: pointer;
+
+    &:hover {
+        transition: background-position-y 0.25s;
+        background-position-y: 95px;
+    }
 }
 
 .topbanner-mediacontainer {
