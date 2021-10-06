@@ -266,7 +266,10 @@ input, select, textarea {
   border: 1px solid #4b4b4b;
 }
 
-.entreprises-image,
+.entreprises-image {
+  width: 50%;
+}
+
 .entreprises-secteurdiv {
   width: 100%;
 }
@@ -277,7 +280,6 @@ input, select, textarea {
 
 .entreprises-info {
   display: flex;
-  max-width: 300px;
   flex-direction: column;
 }
 
@@ -297,6 +299,8 @@ input, select, textarea {
 
 .entreprises-souscatégorie {
   color: #4b4b4b;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 .entreprises-souscatégorie:after {
   margin: 0.5rem;
@@ -330,6 +334,24 @@ input, select, textarea {
 
   .entreprises-info {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .entreprises-contact {
+    width: 40%;
+  }
+
+  .entreprises-contact a {
+    font-size: 1.8rem;
+  }
+
+  .entreprises-souscatégories {
+    white-space: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .entreprises-catégorie {
+    font-size: 1.5rem;
   }
 }
 
