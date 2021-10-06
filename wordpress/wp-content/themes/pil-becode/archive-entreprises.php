@@ -5,6 +5,7 @@ $posts = get_posts( array(
     'posts_per_page' => -1,
     'post_type' => 'entreprise'
 ));?>
+<main>
 <div class="entreprises-topdiv">
     <div class="entreprises-secteurdiv">
         <h1 class="entreprises-secteur">Secteurs</h1>
@@ -54,6 +55,7 @@ $posts = get_posts( array(
     </li>
 <?php endforeach;?>
     </ul>
+        </main>
     <?php wp_reset_postdata();?>
 <?php endif; 
 get_footer(); ?>

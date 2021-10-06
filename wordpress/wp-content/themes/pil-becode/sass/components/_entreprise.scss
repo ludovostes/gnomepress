@@ -13,6 +13,10 @@ input, button {
     border: none;
 }
 
+input, select, textarea {
+    color: white;
+}
+
 .entreprises-topdiv, 
 .entreprises-title, 
 .entreprises-catégories,
@@ -34,13 +38,8 @@ input, button {
     margin-top: 4rem;
 }
 
-.displayNone,
-.entreprises-souscatégories p:nth-last-child(1)::after {
-    display: none;
-}
-
 .entreprises-list {
-    padding: 4rem;
+    padding: 4rem 0;
 }
 
 .entreprises-nom,
@@ -52,6 +51,7 @@ input, button {
 
 .entreprises-searchbar {
     font-size: 1.5rem;
+    min-width: 50%;
 }
 
 .entreprises-nom {
@@ -131,7 +131,9 @@ input, button {
 }
 
 .entreprises-info{
+    display: flex;
     max-width: 300px;
+    flex-direction: column;
 }
 
 .entreprises-info *{
@@ -168,6 +170,24 @@ input, button {
     font-size: 1.5rem;
 }
 
-.entreprises-topdiv {
-    padding: 0 4rem;
+.displayNone,
+.entreprises-souscatégories p:nth-last-child(1)::after {
+    display: none;
+}
+
+@media only screen and (min-width:768px){
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.entreprises-secteur {
+    font-size: 5rem;
+}
+
+.entreprises-info {
+    flex-direction: row;
+}
+
 }

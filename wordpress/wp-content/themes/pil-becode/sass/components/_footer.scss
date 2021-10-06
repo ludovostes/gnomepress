@@ -27,7 +27,7 @@
 
 footer {
     border-top: $bordercolor 1px solid;
-    padding: 1rem;
+    padding: 1rem 0;
     padding-top: 2rem;
 }
 
@@ -88,4 +88,11 @@ footer a, p{
 .footer-noteright{
     margin-left: 3rem;
     grid-column: 2/3;
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        max-width: 80%;
+        margin: auto;
+    }
 }

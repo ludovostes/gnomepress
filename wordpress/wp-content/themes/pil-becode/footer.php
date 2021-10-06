@@ -6,6 +6,7 @@ $tel=get_field('telephone', 'options');
 $email=get_field('email', 'options');
 ?> 
 <footer>
+    <section class="footer">
     <div class="footer-top">
         <div class="footer-topleft">
             <p class="footer-name"><?= $nom ?></p>
@@ -34,6 +35,7 @@ $email=get_field('email', 'options');
             <p class="footer-note">Coded by <a href="http://becode.org/">becode.org</a></p>
         </div>
     </div>
+    </section>
 </footer>
 </body>
 </html>
