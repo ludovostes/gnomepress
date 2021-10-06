@@ -49,5 +49,14 @@
                         <line id="Line_554" data-name="Line 554" x2="13.166" transform="translate(0 4.001)" fill="none" stroke="#fff" stroke-width="1"/>
                         <path id="Path_13528" data-name="Path 13528" d="M43,14l4,4-4,4" transform="translate(-33.972 -14)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/></g>
                     </svg>
-                </div> 
+                </div>
+    </div>
+
+    <div>
+                <?php 
+                wp_nav_menu($args = array(
+                    'menu' => 'réseaux sociaux',
+                    'menu_class' => 'header-nav-resociaux'
+                ));
+                ?>
     </div>
