@@ -25,71 +25,14 @@ body {
   padding: 0;
   background-color: #171717;
   font-family: "II Vorkurs";
-  color: white;
-  /* INTRODUCTION */
-  /* TEXTE DEROULANT */ }
-  body h2 {
-    font-size: 0.5 rem; }
+  color: white; }
   body .introduction {
     color: white;
     width: 200px;
-    font-size: 2rem;
-    line-height: 1.5; }
-  body .container1 {
+    font-size: 2rem; }
+  body .container {
     display: flex;
-    font-size: 1.5rem;
-    width: 125rem;
-    margin: auto;
-    border: greenyellow 1px solid; }
-    body .container1 .colonneintro {
-      flex-direction: row;
-      margin: 5rem; }
-      body .container1 .colonneintro .titreintro {
-        font-size: 1.75rem; }
-  body .liste {
-    list-style-type: none;
-    line-height: 1.75;
-    color: #777777;
-    padding: 0; }
-    body .liste ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0; }
-    body .liste li::before {
-      padding-right: 8px;
-      content: "+";
-      color: #FFC33B; }
-  body #textederoulant {
-    font-size: 10rem; }
-    body #textederoulant .plus {
-      color: #FFC33B; }
-    body #textederoulant .slash {
-      color: #777777; }
-  body .orangecolor {
-    color: #FFC33B; }
-  body #vousavezunprojet {
-    font-size: 7rem; }
-  body .container2 {
-    display: flex;
-    margin: auto;
-    width: 125rem; }
-    body .container2 .cases {
-      flex-direction: row;
-      border: #212121 solid 1px;
-      width: 20rem;
-      height: 30rem;
-      background-color: #212121;
-      margin-left: 0.75rem;
-      margin-right: 0.75rem; }
-    body .container2 #casevide {
-      flex-direction: row;
-      border: #4B4B4B solid 1px;
-      width: 20rem;
-      height: 30rem; }
-  body .partie2 {
-    border: greenyellow 1px solid;
-    width: 125rem;
-    margin: auto; }
+    font-size: 1.5rem; }
 
 .menu-footer {
   list-style: none;
