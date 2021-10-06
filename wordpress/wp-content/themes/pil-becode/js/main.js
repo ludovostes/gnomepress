@@ -17,7 +17,7 @@ playButton.addEventListener("click", ()=>{
 })
 
 videoDiv.addEventListener("mouseover", (e)=>{
-    playButton.style.left = e.pageX + 'px'
+    playButton.style.left = e.pageX + 'px' 
     playButton.style.top = e.pageY-150 + 'px'
 })
 
