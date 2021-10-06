@@ -1,24 +1,57 @@
 .entreprises-topdiv {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entreprises-search {
     border-radius: 5000px;
-    background-color: #212121;
-    padding: 1rem;
-    width: 50%;
-    text-align: center;
+    padding: 2rem 0;
+    width: 100%;
 }
 
-.entreprises-searchbar, .entreprises-searchbutton {
+input, button {
     border: none;
+}
+
+.entreprises-topdiv, 
+.entreprises-title, 
+.entreprises-catégories,
+.entreprises-titleleft,
+.entreprises-souscatégories,
+.entreprises-search,
+.entreprises-secteurdiv {
+    display: flex;
+}
+
+.entreprises-searchbar,
+.entreprises-searchbutton,
+.entreprises-search {
     background-color: #212121;
 }
 
-.displayNone {
+.entreprises-search {
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.displayNone,
+.entreprises-souscatégories p:nth-last-child(1)::after {
     display: none;
 }
 
 .entreprises-list {
-    padding: 2rem;
+    padding: 4rem;
+}
+
+.entreprises-nom,
+.entreprises-contact a,
+.entreprises-souscatégorie,
+.entreprises-searchbar {
+    font-weight: 300;
+}
+
+.entreprises-searchbar {
+    font-size: 1.5rem;
 }
 
 .entreprises-nom {
@@ -26,33 +59,50 @@
     margin-right: 2rem;
     align-self: center;
     padding: 0;
-    font-weight: 300;
     font-size: 2.4rem;
 }
 
-.entreprises-title {
-    display: flex;
-    width: 100%;
+.entreprises-title,
+.entreprises-secteurdiv {
     border-bottom: 1px solid $bordercolor;
+}
+
+.entreprises-secteur {
+    font-size: 4rem;
+}
+
+.entreprises-secteur,
+.entreprises-searchbutton {
+    color: #fff;
+}
+
+.entreprises-searchbutton {
+    font-size: 1.8rem;
+}
+
+.entreprises-title {
+    width: 100%;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .entreprises-catégories {
-    display: flex;
-    flex-direction: row;
     gap: 2rem;
 }
 
-.entreprises-accordeonbutton {
+
+.entreprises-accordeonbutton,
+.entreprises-topdivbutton {
     background-color: transparent;
-    border: none;
     background-repeat: no-repeat;
     height: auto;
     margin-left: auto;
+
+}
+
+.entreprises-accordeonbutton {
     transform: rotate(180deg);
     filter: none;
     transition: all 0.25s;
@@ -65,14 +115,14 @@
 }
 
 .entreprises-catégorie {
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 3rem;
     align-self: center;
     border-radius: 5000px;
     border: 1px solid $bordercolor;
-    font-size: 1.1rem;
 }
 
-.entreprises-image {
+.entreprises-image,
+.entreprises-secteurdiv {
     width: 100%;
 }
 
@@ -86,39 +136,38 @@
 
 .entreprises-info *{
     margin-bottom: 2rem;
-    font-size: 1.5rem;
 }
 
 .entreprises-titleleft{
-    display: flex;
     flex-wrap: wrap;
     max-width: 75%;
 }
 
-.entreprises-contact a {
-    font-size: 1.5rem;
-    font-weight: 300;
-}
 
-.entreprises-website {
+.entreprises-website,
+.entreprises-topdivbutton {
     color: $yellow;
-}
-
-.entreprises-souscatégories {
-    display: flex;
 }
 
 .entreprises-souscatégorie {
     color: $bordercolor;
-    font-size: 1.1rem;
-    font-weight: lighter;
+
     &:after {
         margin: .5rem;
         content: "-";
     }
 }
 
+.entreprises-souscatégorie,
+.entreprises-catégorie {
+    font-size: 1.1rem;
+}
 
-.entreprises-souscatégories p:nth-last-child(1)::after {
-    display: none;
+.entreprises-info *,
+.entreprises-contact a {
+    font-size: 1.5rem;
+}
+
+.entreprises-topdiv {
+    padding: 0 4rem;
 }

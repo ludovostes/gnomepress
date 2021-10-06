@@ -6,8 +6,14 @@ $posts = get_posts( array(
     'post_type' => 'entreprise'
 ));?>
 <div class="entreprises-topdiv">
-    <input class="entreprises-searchbar" type="text" placeholder="Chercher une entreprise...">
-    <button class="entreprises-searchbutton">Q</button>
+    <div class="entreprises-secteurdiv">
+        <h1 class="entreprises-secteur">Secteurs</h1>
+        <img id="accordeonButton" src="http://localhost/wp-content/uploads/2021/10/arrow-down.svg" class="entreprises-topdivbutton">
+    </div>
+    <div class="entreprises-search">
+        <input class="entreprises-searchbar" type="text" placeholder="Chercher une entreprise...">
+        <button class="entreprises-searchbutton"><i class="fas fa-search"></i></button>
+    </div>
 </div>
 <?php if($posts) : ?>
 <ul class="entreprises-list">
