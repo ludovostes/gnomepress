@@ -33,7 +33,13 @@ add_action('init', 'register_pil_menu');
 
 function get_setup() {
     wp_enqueue_style('style', get_stylesheet_uri(),null,microtime(),'all');
+    wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.6/css/all.css');//fontawesome icons
     wp_enqueue_script('main', get_theme_file_uri('./js/main.js'),null,microtime(),true);
 }
 
 add_action('wp_enqueue_scripts', 'get_setup');
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyBK7k3pRlvnW0VZrlIqHt-vEGFRAqExX1g');
+}
+add_action('acf/init', 'my_acf_init');
