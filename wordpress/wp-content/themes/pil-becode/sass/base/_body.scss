@@ -3,4 +3,19 @@ body {
     margin: 0;
     padding: 0;
     background-color: #171717;
+    font-family: $font;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }

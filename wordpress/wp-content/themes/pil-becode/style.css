@@ -21,6 +21,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -28,6 +29,21 @@ body {
   margin: 0;
   padding: 0;
   background-color: #171717;
+  font-family: "II Vorkurs";
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .menu-footer {
@@ -60,14 +76,13 @@ body {
 
 footer {
   border-top: #4b4b4b 1px solid;
-  padding: 1rem;
+  padding: 1rem 0;
   padding-top: 2rem;
 }
 
 footer a, p {
   color: #fff;
   text-decoration: none;
-  font-family: "II vorkurs";
   font-size: 1.3rem;
   font-weight: 300;
 }
@@ -121,6 +136,13 @@ footer a, p {
 .footer-noteright {
   margin-left: 3rem;
   grid-column: 2/3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 80%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
