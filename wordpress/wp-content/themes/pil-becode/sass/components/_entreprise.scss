@@ -186,24 +186,6 @@ main {
     min-height: 100vh;
 }
 
-.yellowdecorations {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 50rem;
-    right: 0;
-    top: 50%;
-}
-
-.yellowdecoration {
-    display: block;
-    width: 1rem;
-    height: 5rem;
-    background-color: $yellow;
-    transform: skewY(30deg);
-}
-
 .entreprises-secteur {
     font-size: 5rem;
 }
