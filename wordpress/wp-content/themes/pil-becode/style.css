@@ -228,6 +228,7 @@ footer p,
 
   .menu-footer li {
     padding: 1rem 0 !important;
+    margin: 0 !important;
   }
 
   .menu-footer {
@@ -235,10 +236,12 @@ footer p,
     flex-direction: column;
     justify-content: space-between;
     border: none;
+    padding-top: 0;
   }
 
   .footer-right {
     padding-left: 10rem;
+    padding-top: 1rem;
     border-left: 1px solid #4b4b4b;
     width: 100%;
   }
