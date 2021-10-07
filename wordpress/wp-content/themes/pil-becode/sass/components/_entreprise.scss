@@ -1,6 +1,6 @@
-.entreprises-topdiv {
-    flex-direction: column;
-    align-items: center;
+.yellowdecorations,
+.yellowdecoration {
+    display: none;
 }
 
 .entreprises-search {
@@ -16,8 +16,7 @@ input, button {
 input, select, textarea {
     color: white;
 }
-
-.entreprises-topdiv, 
+ 
 .entreprises-title, 
 .entreprises-catégories,
 .entreprises-titleleft,
@@ -184,6 +183,25 @@ input, select, textarea {
 main {
     max-width: 80%;
     margin: auto;
+    min-height: 100vh;
+}
+
+.yellowdecorations {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50rem;
+    right: 0;
+    top: 50%;
+}
+
+.yellowdecoration {
+    display: block;
+    width: 1rem;
+    height: 5rem;
+    background-color: $yellow;
+    transform: skewY(30deg);
 }
 
 .entreprises-secteur {
@@ -211,4 +229,48 @@ main {
 .entreprises-catégorie {
     font-size: 1.5rem;
 }
+}
+
+@media only screen and (min-width:1280px){
+    main {
+        margin-top: 4rem;
+        display: flex;
+    }
+
+    .entreprises-topdivbutton {
+        display: none;
+    }
+
+    .entreprises-secteurdiv {
+        width: 40%;
+        border: none;
+    }
+
+    .entreprises-secteur {
+        margin-top: 0;
+    }
+
+    .entreprises-maincontent {
+        width: 100%;
+        border-left: 1px solid $bordercolor;
+        padding: 0 5rem;
+    }
+
+    .entreprises-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .entreprises-souscatégories,
+    .entreprises-souscatégorie {
+        margin-top: auto;
+        margin-bottom: 0;
+    }
+
+    .entreprises-search {
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        max-width: 95%;
+        margin-top: 0;
+    }
 }

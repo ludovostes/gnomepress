@@ -6,16 +6,22 @@ $posts = get_posts( array(
     'post_type' => 'entreprise'
 ));?>
 <main>
-<div class="entreprises-topdiv">
+    <div class="yellowdecorations">
+        <div class="yellowdecoration"></div>
+        <div class="yellowdecoration"></div>
+        <div class="yellowdecoration"></div>
+        <div class="yellowdecoration"></div>
+        <div class="yellowdecoration"></div>
+    </div>
     <div class="entreprises-secteurdiv">
         <h1 class="entreprises-secteur">Secteurs</h1>
         <img id="accordeonButton" src="http://localhost/wp-content/uploads/2021/10/arrow-down.svg" class="entreprises-topdivbutton">
     </div>
+    <div class="entreprises-maincontent">
     <div class="entreprises-search">
         <input class="entreprises-searchbar" type="text" placeholder="Chercher une entreprise...">
         <button class="entreprises-searchbutton"><i class="fas fa-search"></i></button>
     </div>
-</div>
 <?php if($posts) : ?>
 <ul class="entreprises-list">
     <?php foreach ($posts as $post) :
@@ -55,6 +61,7 @@ $posts = get_posts( array(
     </li>
 <?php endforeach;?>
     </ul>
+        </div>
         </main>
     <?php wp_reset_postdata();?>
 <?php endif; 
