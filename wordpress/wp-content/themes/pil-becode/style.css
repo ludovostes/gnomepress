@@ -52,21 +52,27 @@ a {
   border-bottom: #4b4b4b 1px solid;
   padding: 0;
   display: grid;
-  height: 10rem;
+  margin: 0;
 }
 
 .menu-footer li {
   padding: 0.5rem 0;
 }
 
-.menu-footer li:nth-child(even) {
+.menu-footer li:nth-child(3),
+.menu-footer li:nth-child(4) {
   grid-column: 2/3;
   padding-left: 3rem;
   border-left: #4b4b4b 1px solid;
 }
 
-.menu-footer li:nth-child(1), .menu-footer li:nth-child(2) {
+.menu-footer li:nth-child(odd) {
   padding-top: 2rem;
+  grid-row: 1/2;
+}
+
+.menu-footer li:nth-child(even) {
+  grid-row: 2/3;
 }
 
 .menu-footer a {
@@ -76,7 +82,11 @@ a {
 
 footer {
   border-top: #4b4b4b 1px solid;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
+}
+
+.footer-top,
+.footer-right {
   padding-top: 2rem;
 }
 
@@ -96,7 +106,7 @@ footer a, p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20rem;
+  width: 50%;
 }
 
 .footer-name {
@@ -114,6 +124,7 @@ footer a, p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .footer-notediv, .menu-footer {
@@ -138,10 +149,107 @@ footer a, p {
   grid-column: 2/3;
 }
 
+.footer {
+  max-width: 80%;
+  margin: auto;
+}
+
+.footer-adress2 {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
-  .footer {
-    max-width: 80%;
+  .menu-footer li:nth-child(3),
+.menu-footer li:nth-child(4) {
+    border: none;
+    padding-left: 0;
     margin: auto;
+  }
+
+  .footer-notediv a,
+.footer-notediv p {
+    font-size: 1.2rem;
+  }
+
+  .menu-footer a,
+.footer-name {
+    font-size: 2rem;
+  }
+
+  .menu-footer li {
+    padding: 2rem 0;
+  }
+
+  .menu-footer {
+    padding: 3rem 0;
+  }
+
+  .footer-name {
+    width: 11rem;
+    line-height: 30px;
+  }
+
+  .footer-telephonediv {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .footer-noteright {
+    margin: auto;
+  }
+
+  .footer-notediv {
+    padding-top: 1rem;
+  }
+
+  .footer-notediv p {
+    margin: 0.5rem 0;
+  }
+
+  .footer-right {
+    padding-top: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    display: flex;
+  }
+
+  footer a,
+footer p,
+.footer-notediv a,
+.footer-notediv p {
+    font-size: 1.5rem;
+  }
+
+  .footer-top {
+    min-width: 40%;
+  }
+
+  .menu-footer li {
+    padding: 1rem 0 !important;
+  }
+
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .footer-right {
+    padding-left: 10rem;
+    border-left: 1px solid #4b4b4b;
+    width: 100%;
+  }
+
+  .menu-footer a,
+.footer-name {
+    font-size: 2rem;
+  }
+
+  .footer-notediv {
+    margin-top: 5rem;
   }
 }
 
