@@ -31,7 +31,7 @@ $email=get_field('email', 'options');
             <a class="footer-notegreylink" href="#">Politique de confidentialité</a>
         </div>
         <div class="footer-noteright">
-            <p class="footer-note">Design by <a href="http://savoirfaire.digital/">savoir-faire.digital</a></p>
+            <p class="footer-note">Design by <a href="http://savoirfaire.digital/">savoirfaire.digital</a></p>
             <p class="footer-note">Coded by <a href="http://becode.org/">becode.org</a></p>
         </div>
     </div>
