@@ -346,37 +346,117 @@ h2 {
   margin: auto;
 }
 
+.espaces h1 {
+  font-size: 9rem;
+}
+
 .espaces-white {
   background-color: #fff;
+  position: relative;
+  overflow-y: hidden;
 }
 .espaces-white * {
   color: black;
-}
-.espaces-white h1 {
-  font-size: 9rem;
 }
 .espaces-white .espaces-titre {
   width: 40%;
   margin: auto;
   margin-top: 0;
   text-align: center;
+  padding-top: 13rem;
 }
 .espaces-white img {
   width: 100%;
+  margin: 20rem 0;
+}
+.espaces-white::after {
+  position: absolute;
+  content: "01";
+  font-size: 100rem;
+  font-weight: 300;
+  color: #4b4b4b;
+  opacity: 5%;
+  bottom: -55.5rem;
+  left: 85rem;
 }
 
 .espaces-introduction {
   max-width: 80%;
   display: flex;
   margin: auto;
+  padding-bottom: 20rem;
+  position: relative;
 }
 .espaces-introduction .espaces-introductiongauche {
-  width: 50%;
+  width: fit-content;
+  margin-right: 14rem;
 }
 
 .espaces-titre2 {
   margin: 0;
-  width: 100%;
+  width: 57rem;
+}
+
+.espaces-soustitre {
+  font-size: 2.4rem;
+}
+
+.espaces-texte {
+  width: 45rem;
+  margin-bottom: 5rem;
+}
+.espaces-texte p {
+  font-size: 2rem;
+  line-height: 3.8rem;
+}
+
+.espaces-boutonlien {
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+  border: 1px solid black;
+  border-radius: 5000px;
+}
+
+.espaces-black {
+  position: relative;
+}
+.espaces-black::after {
+  position: absolute;
+  content: "02";
+  font-size: 100rem;
+  font-weight: 300;
+  color: #fff;
+  opacity: 5%;
+  bottom: 80rem;
+  left: 85rem;
+  z-index: 1;
+}
+
+.espaces-main {
+  margin: auto;
+  margin-top: 43rem;
+  position: relative;
+  max-width: 80%;
+}
+.espaces-main img {
+  position: relative;
+  z-index: 2;
+}
+
+.espaces-mainintro {
+  display: flex;
+}
+
+.espaces-titre3 {
+  width: 57rem;
+  margin: 0;
+  margin-right: 14rem;
+}
+
+.espaces-mainintrotext {
+  font-size: 2rem;
+  width: 45rem;
+  line-height: 38px;
 }
 
 /*# sourceMappingURL=style.css.map */
