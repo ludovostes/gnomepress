@@ -346,4 +346,37 @@ h2 {
   margin: auto;
 }
 
+.espaces-white {
+  background-color: #fff;
+}
+.espaces-white * {
+  color: black;
+}
+.espaces-white h1 {
+  font-size: 9rem;
+}
+.espaces-white .espaces-titre {
+  width: 40%;
+  margin: auto;
+  margin-top: 0;
+  text-align: center;
+}
+.espaces-white img {
+  width: 100%;
+}
+
+.espaces-introduction {
+  max-width: 80%;
+  display: flex;
+  margin: auto;
+}
+.espaces-introduction .espaces-introductiongauche {
+  width: 50%;
+}
+
+.espaces-titre2 {
+  margin: 0;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
