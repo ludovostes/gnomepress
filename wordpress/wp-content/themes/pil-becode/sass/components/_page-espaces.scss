@@ -9,6 +9,7 @@
     background-color: #fff;
     position: relative;
     overflow-y: hidden;
+    overflow-x: hidden;
     * {
         color: black;
     }
@@ -73,8 +74,23 @@
 .espaces-boutonlien {
     font-size: 1.8rem;
     padding: 1rem 3rem;
-    border: 1px solid black;
+    border: 1px solid $bgcolor;
     border-radius: 5000px;
+    position: relative;
+    z-index: 3;
+
+    .espaces-plus {
+        align-self: center;
+    }
+
+    &:hover {
+        background-color: $bgcolor;
+        color: white;
+    }
+
+    &:hover > .espaces-plus {
+        color: $yellow;
+    }
 }
 
 .espaces-black {

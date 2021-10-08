@@ -354,6 +354,7 @@ h2 {
   background-color: #fff;
   position: relative;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .espaces-white * {
   color: black;
@@ -413,8 +414,20 @@ h2 {
 .espaces-boutonlien {
   font-size: 1.8rem;
   padding: 1rem 3rem;
-  border: 1px solid black;
+  border: 1px solid #171717;
   border-radius: 5000px;
+  position: relative;
+  z-index: 3;
+}
+.espaces-boutonlien .espaces-plus {
+  align-self: center;
+}
+.espaces-boutonlien:hover {
+  background-color: #171717;
+  color: white;
+}
+.espaces-boutonlien:hover > .espaces-plus {
+  color: #FFC33B;
 }
 
 .espaces-black {

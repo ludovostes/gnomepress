@@ -24,7 +24,7 @@ $image2 = get_field('image_espaces_2');
             </div>
             <div class="espaces-introductiondroite">
                 <div class="espaces-texte"><?= $texte2 ?></div>
-                <a href="<?= $link ?>" class="espaces-boutonlien">Réservez votre espace + </a>
+                <a href="<?= $link ?>" class="espaces-boutonlien">Réservez votre espace <span class="espaces-plus">+</span> </a>
             </div>
         </section>
 
